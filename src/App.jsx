@@ -1,10 +1,9 @@
 
 import './App.css'
-import About from './components/About';
-import Navbar from './components/navbar'
+
 import 'flowbite/dist/flowbite.min.css';
-import Home from './pages/Home';
-import { Grid } from '@mui/material';
+import MyFooter from './pages/MyFooter';
+
 
 
 
@@ -15,7 +14,8 @@ function App() {
       
       {/* <Home/> */}
       {/* <About/> */}
-     {/* <Grid/> */}
+      {/* <Grid/> */}
+      <MyFooter/>
     </>
   )
 }
