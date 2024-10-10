@@ -52,29 +52,29 @@ function Navbar () {
    
     
   return (
-      <header className='w-full bg-white md:bg-transparent z-[1000]'>
-          <nav className={`py-4 lg:px-14 bg-yellow-100 px-4 ${isSticky ?"sticky top-0 left-0 right-0 border-b  duration-300":""}`}>
-              <div className='flex justify-between items-center text-base gap-8' >
+      <header className='w-full bg-white md:bg-transparent z-[1000] fixed top-0'>
+          <nav className={`py-4 lg:px-14 px-4 bg-yellow-100 ${isSticky ?"sticky top-0 left-0 right-0 border-b bg-white duration-300":""}`}>
+              <div className='flex justify-between items-center text-base gap-8 ' >
                   <a href=""className='text-2xl font-semibold flex items-center space-x-3'><img src={logo} alt="" className='w-10 inline-block items-center' />
-                      <span className='text-[#263238]' >TECTIC</span></a>
+                      <span className='text-[#263238]' >NEXCENT</span></a>
                              {/* nav items */}
-                  <ul className='md:flex space-x-12 hidden'>
+                  <ul className='cont-hidden space-x-12'>
                       {
                           //   navItems.map(({ link, path }) => <link key={path} to={path}>{link}</link>)
-                          navItems.map(({ link, path }) => <a href={path} spy={true} smooth={true} offset={-100} key={path}
-                              className='block cursor-pointer text-base text-gray-900 hover:text-brandPrimary first:font-medium' > {link}</a>)
+                          navItems.map(({ link, path }) => <Link to={path} spy={true} smooth={true} offset={-100} key={path}
+                              className='block cursor-pointer text-base text-gray-900 hover:text-brandPrimary first:font-medium' > {link}</Link>)
                       }
                       
                   </ul>
                              {/* buttons large device */}
-                  <div className='space-x-12 hidden lg:flex items-center'> 
-                      <a href="" className='hidden lg:flex items-center text-brandPrimary hover:text-gray900'>
+                  <div className='space-x-12 lg-hidden items-center'> 
+                      <a href="" className='lg-hidden items-center text-brandPrimary hover:text-gray900'>
                           Login</a>
                       <button className='bg-brandPrimary text-white py-2 px-2 transition-all
                          duration-300 rounded hover:bg-neutralDGray'>Sign up</button>
                   </div>
                   {/* btn for mobiles */}
-                  <div className='md:hidden z-50'>
+                  <div className='md:hidden'>
                       <button 
                           onClick={()=>setIsMenuOpen((prev)=>!prev)}
                         className=' text-neutralDGray focus:outline-none focus:text-gray-500'>
@@ -87,16 +87,16 @@ function Navbar () {
                   
               </div>
               {/* nav items for mobiles */}
-              <div className={`space-y-4 px-4 mt-16 py-7  bg-brandPrimary ${ isMenuOpen ?"block fixed top-0 left-0 right-0 z-[1000]" :"hidden"}`}>
+              <div className={`space-y-4 px-4 mt-16 py-7 bg-brandPrimary ${ isMenuOpen ?"block fixed top-0 left-0 right-0 " :"hidden"}`}>
                    {
                          
-                          navItems.map(({ link, path }) => <a href={path} spy={true} smooth={true} offset={-100} key={path}
-                              className='block text-base text-white hover:text-brandPrimary first:font-medium' > {link}</a>)
+                          navItems.map(({ link, path }) => <Link to={path} spy={true} smooth={true} offset={-100} key={path}
+                              className='block text-base text-white hover:text-brandPrimary first:font-medium' > {link}</Link>)
                       }
               </div>
-              {/* <div className='relative'>
+              <div className='relative'>
                   {isSticky && <button className='absolute -bottom-[800px] right-0 p-2 btn-primary' onClick={scollToTop}>top</button>}
-              </div> */}
+              </div>
           </nav>
      </header>
    

@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../components/navbar'
 import { Carousel } from 'flowbite-react'
 
 import aboutImg from '../photos/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-vector.jpg'
@@ -21,7 +20,9 @@ import { Card } from "flowbite-react";
 import AsImg from '../photos/pic3.jpg'
 import SlideImg from '../photos/copy-space-friends-with-skateboard-basketball-ball_23-2148478710.avif'
 import MyFooter from './MyFooter'
-import Fles from '../photos/Fles'
+import Fles from '../components/Fles'
+import Navbar from '../components/Navbar'
+import Carousels from '../components/Carousels'
 
 
 
@@ -43,15 +44,14 @@ const Home = () => {
       <div className='lg:mx-24 lg:mt-8 '>
         <img className=' w-full' src={aboutImg} alt="" />
       </div>
-      <div className='flex items-center justify-center  '>
-        <img className='w-60 mt-4 lg:mt-0 md:mt-0  ' src={omg} alt="" />
-        <img className='w-60 hidden   md:block ' src={omg} alt="" />
-        <img className='w-60 hidden  md:block ' src={omg} alt="" />
-        <img className='w-60 hidden  lg:block ' src={omg} alt="" />
-        <img className='w-60 hidden xl:block ' src={omg} alt="" />
-        <img className='w-60 hidden ' src={omg} alt="" />
-        <img className='w-60 hidden ' src={omg} alt="" />
-          <img className='w-60 hidden  ' src={omg} alt="" />
+      <div className='flex items-center justify-center mt-4 lg:mt-0 md:mt-0   '>
+        <img className='w-48 ' src={omg} alt="" />
+        <img className='w-48 hidden    ' src={omg} alt="" />
+        <img className='w-48 hidden     ' src={omg} alt="" />
+        <img className='w-48 hidden   ' src={omg} alt="" />
+        <img className='w-48 hidden    ' src={omg} alt="" />
+        <img className='w-48 hidden' src={omg} alt="" />
+       
        
 
 
@@ -313,30 +313,11 @@ const Home = () => {
        
       </div>
 
-              <div className='  w-screen lg:px-20 mt-4 h-[80vh]'>
-        <Carousel className='w-full mx-auto '>
-        <div className="flex h-full bg-[#310914]  items-center justify-center">
-            {/* <img className='block ' src={SlideImg} alt="" /> */}
-           
-            <div className=''>
-                <Fles/>
-            </div>
-            
-        </div>
-        <div className="flex h-full bg-[#310914] items-center justify-center">
-         <div className=''>
-                <Fles/>
-            </div>
-        </div>
-        <div className="flex h-full bg-[#310914] items-center justify-center">
-         <div className=''>
-                <Fles/>
-            </div>
-        </div>
-        
-        </Carousel>
-        
+      
+      <div>
+        <Carousels/>
       </div>
+             
       {/* <div >
         <Fles/>
       </div> */}

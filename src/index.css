@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.cont-hidden{
+    display: flex;
+}
+
+@media screen and (max-width: 767px){
+    .cont-hidden{
+    display: none;
+}
+}
+.lg-hidden{
+    display: flex;
+}
+
+@media screen and (max-width: 1024px){
+    .lg-hidden{
+    display: none;
+}
+}
+
+.fles1-hide{
+    display: block;
+}
+
+@media screen and (max-width: 1024px){
+    .fles1-hide{
+    display: none;
+}
+}
+.fles2-block{
+    display: none;
+}
+
+@media screen and (max-width: 1024px){
+    .fles2-block{
+    display: flex;
+}
+}
