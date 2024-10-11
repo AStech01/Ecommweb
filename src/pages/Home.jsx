@@ -44,14 +44,12 @@ const Home = () => {
       <div className='lg:mx-24 lg:mt-8 '>
         <img className=' w-full' src={aboutImg} alt="" />
       </div>
-      <div className='flex items-center justify-center mt-4 lg:mt-0 md:mt-0   '>
-        <img className='w-48 ' src={omg} alt="" />
-        <img className='w-48 hidden    ' src={omg} alt="" />
-        <img className='w-48 hidden     ' src={omg} alt="" />
-        <img className='w-48 hidden   ' src={omg} alt="" />
-        <img className='w-48 hidden    ' src={omg} alt="" />
-        <img className='w-48 hidden' src={omg} alt="" />
-       
+      <div className=' flex items-center justify-center mt-4 lg:mt-0 md:mt-0   '>
+        <img className='w-48 hidden md:block ' src={omg} alt="" />
+        <img className='w-48  hidden md:block ' src={omg} alt="" />
+        <img className='w-48   hidden ' src={omg} alt="" />
+        <img className='w-48 example ' src={omg} alt="" />
+      
        
 
 
@@ -74,8 +72,8 @@ const Home = () => {
         Shop now
             </h5>
             <div className='flex items-center justify-center'>
-            <button className='bg-brandPrimary text-white py-2 px-10 transition-all
-                         duration-300 rounded hover:bg-neutralDGray mt-2 text-2xl font-semibold'>Click Me</button></div>
+            <button className='custom-btn btn-7   text-xl  transition-all
+                         duration-300 rounded  mt-2  font-bold'>Click Me</button></div>
               </div>
         </Card>
           </div> 
@@ -94,8 +92,8 @@ const Home = () => {
         Shop now
               </h5>
                 <div className='flex items-center justify-center'>
-            <button className='bg-brandPrimary text-white py-2 px-10 transition-all
-                         duration-300 rounded hover:bg-neutralDGray mt-2 text-2xl font-semibold'>Click Me</button></div>
+            <button className='custom-btn btn-7   text-xl  transition-all
+                         duration-300 rounded  mt-2  font-bold'>Click Me</button></div>
               
               </div>
           </Card>
@@ -115,8 +113,8 @@ const Home = () => {
         Shop now
               </h5>
                 <div className='flex items-center justify-center'>
-            <button className='bg-brandPrimary text-white py-2 px-10 transition-all
-                         duration-300 rounded hover:bg-neutralDGray mt-2 text-2xl font-semibold'>Click Me</button></div>
+          <button className='custom-btn btn-7   text-xl  transition-all
+                         duration-300 rounded  mt-2  font-bold'>Click Me</button></div>
               </div>
       
           </Card>
@@ -136,8 +134,8 @@ const Home = () => {
         Shop now
               </h5>
                 <div className='flex items-center justify-center'>
-            <button className='bg-brandPrimary text-white py-2 px-10 transition-all
-                         duration-300 rounded hover:bg-neutralDGray mt-2 text-2xl font-semibold'>Click Me</button></div>
+           <button className='custom-btn btn-7   text-xl  transition-all
+                         duration-300 rounded  mt-2  font-bold'>Click Me</button></div>
               </div>
           </Card>
           </div>
@@ -159,8 +157,8 @@ const Home = () => {
         Shop now
             </h5>
               <div className='flex items-center justify-center'>
-            <button className='bg-brandPrimary text-white py-2 px-10 transition-all
-                         duration-300 rounded hover:bg-neutralDGray mt-2 text-2xl font-semibold'>Click Me</button></div>
+           <button className='custom-btn btn-7   text-xl  transition-all
+                         duration-300 rounded  mt-2  font-bold'>Click Me</button></div>
               </div>
         </Card>
           </div> 
@@ -179,8 +177,8 @@ const Home = () => {
         Shop now
               </h5>
                 <div className='flex items-center justify-center'>
-            <button className='bg-brandPrimary text-white py-2 px-10 transition-all
-                         duration-300 rounded hover:bg-neutralDGray mt-2 text-2xl font-semibold'>Click Me</button></div>
+          <button className='custom-btn btn-7   text-xl  transition-all
+                         duration-300 rounded  mt-2  font-bold'>Click Me</button></div>
               </div>
           </Card>
         </div> 
@@ -199,8 +197,8 @@ const Home = () => {
         Shop now
               </h5>
                 <div className='flex items-center justify-center'>
-            <button className='bg-brandPrimary text-white py-2 px-10 transition-all
-                         duration-300 rounded hover:bg-neutralDGray mt-2 text-2xl font-semibold'>Click Me</button></div>
+          <button className='custom-btn btn-7   text-xl  transition-all
+                         duration-300 rounded  mt-2  font-bold'>Click Me</button></div>
               </div>
       
           </Card>
@@ -220,8 +218,8 @@ const Home = () => {
         Shop now
               </h5>
                 <div className='flex items-center justify-center'>
-            <button className='bg-brandPrimary text-white py-2 px-10 transition-all
-                         duration-300 rounded hover:bg-neutralDGray mt-2 text-2xl font-semibold'>Click Me</button></div>
+           <button className='custom-btn btn-7   text-xl  transition-all
+                         duration-300 rounded  mt-2  font-bold'>Click Me</button></div>
               </div>
           </Card>
           </div>
@@ -243,8 +241,8 @@ const Home = () => {
         Shop now
             </h5>
               <div className='flex items-center justify-center'>
-            <button className='bg-brandPrimary text-white py-2 px-10 transition-all
-                         duration-300 rounded hover:bg-neutralDGray mt-2 text-2xl font-semibold'>Click Me</button></div>
+         <button className='custom-btn btn-7   text-xl  transition-all
+                         duration-300 rounded  mt-2  font-bold'>Click Me</button></div>
               </div>
         </Card>
           </div> 
@@ -263,8 +261,8 @@ const Home = () => {
         Shop now
               </h5>
                 <div className='flex items-center justify-center'>
-            <button className='bg-brandPrimary text-white py-2 px-10 transition-all
-                         duration-300 rounded hover:bg-neutralDGray mt-2 text-2xl font-semibold'>Click Me</button></div>
+          <button className='custom-btn btn-7   text-xl  transition-all
+                         duration-300 rounded  mt-2  font-bold'>Click Me</button></div>
               </div>
           </Card>
         </div> 
@@ -283,8 +281,8 @@ const Home = () => {
         Shop now
               </h5>
                 <div className='flex items-center justify-center'>
-            <button className='bg-brandPrimary text-white py-2 px-10 transition-all
-                         duration-300 rounded hover:bg-neutralDGray mt-2 text-2xl font-semibold'>Click Me</button></div>
+            <button className='custom-btn btn-7   text-xl  transition-all
+                         duration-300 rounded  mt-2  font-bold'>Click Me</button></div>
               </div>
       
           </Card>
@@ -304,8 +302,8 @@ const Home = () => {
         Shop now
               </h5>
                 <div className='flex items-center justify-center'>
-            <button className='bg-brandPrimary text-white py-2 px-10 transition-all
-                         duration-300 rounded hover:bg-neutralDGray mt-2 text-2xl font-semibold'>Click Me</button></div>
+           <button className='custom-btn btn-7   text-xl  transition-all
+                         duration-300 rounded  mt-2  font-bold'>Click Me</button></div>
               </div>
           </Card>
           </div>

@@ -1,8 +1,11 @@
 
 import './App.css'
 
+
 import 'flowbite/dist/flowbite.min.css';
 import MyFooter from './pages/MyFooter';
+import Login from './components/Login';
+
 
 
 
@@ -15,7 +18,10 @@ function App() {
       {/* <Home/> */}
       {/* <About/> */}
       {/* <Grid/> */}
-      <MyFooter/>
+      <MyFooter />
+       {/* <Login/> */}
+    
+  
     </>
   )
 }

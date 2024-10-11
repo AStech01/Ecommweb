@@ -22,11 +22,9 @@ const router = createBrowserRouter([
     path: "/product",
     element: <Product/>,
   },
+ 
      
-  // {
-  //   path: "/Grid",
-  //   element: <Grid/>,
-  //   },
+
 ]);
 
 createRoot(document.getElementById('root')).render(
