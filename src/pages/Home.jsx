@@ -59,7 +59,7 @@ const Home = () => {
       </div>
       <div className='flex flex-row justify-evenly flex-wrap mt-4'>
           <div className=''> <Card
-      className="max-w-sm "
+      className="max-w-sm hover:scale-95 transition-all duration-300 "
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc={AsImg}
     >
@@ -79,7 +79,7 @@ const Home = () => {
           </div> 
        <div className='lg:mt-0 md:mt-0 mt-2'>
          <Card
-      className="max-w-sm"
+      className="max-w-sm hover:scale-95 transition-all duration-300"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc={AsImge}
     >
@@ -100,7 +100,7 @@ const Home = () => {
         </div> 
         <div  className='lg:mt-0 md:mt-0 mt-2'>
            <Card
-      className="max-w-sm"
+      className="max-w-sm hover:scale-95 transition-all duration-300"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc={AsImgf}
           >
@@ -121,7 +121,7 @@ const Home = () => {
         </div>
         <div  className='lg:mt-0 md:mt-0 mt-2'>
            <Card
-      className="max-w-sm"
+      className="max-w-sm hover:scale-95 transition-all duration-300"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc={AsImgg}
     >
@@ -144,7 +144,7 @@ const Home = () => {
       </div>
        <div className='flex flex-row justify-evenly flex-wrap mt-4'>
           <div> <Card
-      className="max-w-sm"
+      className="max-w-sm hover:scale-95 transition-all duration-300"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc={AsImgh}
     >
@@ -164,7 +164,7 @@ const Home = () => {
           </div> 
        <div className='lg:mt-0 md:mt-0 mt-2'>
          <Card
-      className="max-w-sm"
+      className="max-w-sm hover:scale-95 transition-all duration-300"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc={AsImgi}
     >
@@ -184,7 +184,7 @@ const Home = () => {
         </div> 
         <div  className='lg:mt-0 md:mt-0 mt-2'>
            <Card
-      className="max-w-sm"
+      className="max-w-sm hover:scale-95 transition-all duration-300"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc={AsImgj}
           >
@@ -205,7 +205,7 @@ const Home = () => {
         </div>
         <div  className='lg:mt-0 md:mt-0 mt-2'>
            <Card
-      className="max-w-sm"
+      className="max-w-sm hover:scale-95 transition-all duration-300"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc={AsImgk}
     >
@@ -228,7 +228,7 @@ const Home = () => {
       </div>
        <div className='flex flex-row justify-evenly flex-wrap mt-4'>
           <div> <Card
-      className="max-w-sm"
+      className="max-w-sm hover:scale-95 transition-all duration-300" 
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc={AsImgl}
     >
@@ -248,7 +248,7 @@ const Home = () => {
           </div> 
        <div className='lg:mt-0 md:mt-0 mt-2'>
          <Card
-      className="max-w-sm"
+      className="max-w-sm hover:scale-95 transition-all duration-300"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc={AsImgm}
     >
@@ -268,7 +268,7 @@ const Home = () => {
         </div> 
         <div  className='lg:mt-0 md:mt-0 mt-2'>
            <Card
-      className="max-w-sm"
+      className="max-w-sm hover:scale-95 transition-all duration-300"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc={AsImgn}
           >
@@ -289,7 +289,7 @@ const Home = () => {
         </div>
         <div  className='lg:mt-0 md:mt-0 mt-2'>
            <Card
-      className="max-w-sm"
+      className="max-w-sm hover:scale-95 transition-all duration-300"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc={AsImgo}
     >

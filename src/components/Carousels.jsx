@@ -4,7 +4,7 @@ import Fles from './Fles'
 
 const Carousels = () => {
   return (
-    <div className="h-[60vh] lg:h-[80vh]">
+    <div className="h-[60vh] lg:h-[80vh] mt-4">
       <Carousel>
         <div>
             <Fles/>

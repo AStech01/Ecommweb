@@ -3,7 +3,8 @@ import React from 'react';
 import Illustration21 from '../photos/illuu.png'
 import Illustration1 from '../photos/download.png'
 import Illustration2 from '../photos/illu3.png'
-import Navbar from './navbar';
+import Navbar from '../components/Navbar'
+
 
 
 

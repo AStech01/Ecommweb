@@ -3,13 +3,13 @@
 const flowbite = require("flowbite-react/tailwind");
 
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./index.html",
+      "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}", 
     flowbite.content(),
   ],
-  theme: {
+   theme: {
     extend: {
       colors: {
         neutralSilver: "#F7F7FA",  // Corrected hex code format
@@ -21,7 +21,7 @@ export default {
     },
   },
   plugins: [
-        flowbite.content(),
+    // ...
+    flowbite.plugin(),
   ],
-}
-
+};

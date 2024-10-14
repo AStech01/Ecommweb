@@ -38,7 +38,7 @@ function Navbar () {
         { link: "Service", path: "service" },
         { link: "About", path: "/about" },
         { link: "Product", path: "product" },
-        { link: "Testimonial", path: "testimonial" },
+        { link: "Kids", path: "Kids" },
         { link: "FAQ", path: "faq" },
 
     ];
