@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import logo from '../photos/images.png'
-import { Link } from 'react-scroll'
+import { Link } from 'react-router-dom';
 import { FaBars, FaXmark } from "react-icons/fa6";
+
 
 
 
@@ -33,22 +34,22 @@ function Navbar () {
     });
     //nav items array
 
-    const navItems = [
-        { link: "Home", path: "/" },
-        { link: "Service", path: "service" },
-        { link: "About", path: "/about" },
-        { link: "Product", path: "product" },
-        { link: "Kids", path: "Kids" },
-        { link: "FAQ", path: "faq" },
+const navItems = [
+    { link: "Home", path: "/" },
+    { link: "Service", path: "/service" },
+    { link: "About", path: "/about" },
+    { link: "Product", path: "/product" },
+    { link: "Kids", path: "/kids" }, // Changed "Kids" to "/kids" for consistency
+    { link: "FAQ", path: "/faq" },
+];
 
-    ];
-
-    const scollToTop = () => {
-         window.scrollTo({
+const scrollToTop = () => {
+    window.scrollTo({
         top: 0,
         behavior: 'smooth' 
     });
-    }
+};
+
    
     
   return (
@@ -56,16 +57,20 @@ function Navbar () {
           <nav className={`py-4 lg:px-14 px-4 bg-yellow-100 ${isSticky ?"sticky top-0 left-0 right-0 border-b bg-white duration-300":""}`}>
               <div className='flex justify-between items-center text-base gap-8 ' >
                   <a href=""className='text-2xl font-semibold flex items-center space-x-3'><img src={logo} alt="" className='w-10 inline-block items-center' />
-                      <span className='text-[#263238]' >NEXCENT</span></a>
+                      <span className='text-[#263238]' >TECTIC</span></a>
                              {/* nav items */}
                   <ul className='cont-hidden space-x-12'>
-                      {
-                          //   navItems.map(({ link, path }) => <link key={path} to={path}>{link}</link>)
-                          navItems.map(({ link, path }) => <Link to={path} spy={true} smooth={true} offset={-100} key={path}
-                              className='block cursor-pointer text-base text-gray-900 hover:text-brandPrimary first:font-medium' > {link}</Link>)
-                      }
-                      
-                  </ul>
+            {navItems.map(({ link, path }) => (
+                <Link 
+                    to={path} 
+                    key={path}
+                    onClick={scrollToTop} // Add this to scroll to top on click
+                    className='block cursor-pointer text-base text-gray-900 hover:text-brandPrimary first:font-medium'
+                >
+                    {link}
+                </Link>
+            ))}
+        </ul>
                              {/* buttons large device */}
                   <div className='space-x-12 lg-hidden items-center'> 
                       <a href="" className='lg-hidden items-center text-brandPrimary hover:text-gray900'>
@@ -95,7 +100,7 @@ function Navbar () {
                       }
               </div>
               <div className='relative'>
-                  {isSticky && <button className='absolute -bottom-[800px] right-0 p-2 btn-primary' onClick={scollToTop}>top</button>}
+                  {isSticky && <button className='absolute -bottom-[800px] right-0 p-2 btn-primary' onClick={scrollToTop}>top</button>}
               </div>
           </nav>
      </header>

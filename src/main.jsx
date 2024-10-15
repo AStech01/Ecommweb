@@ -7,6 +7,8 @@ import Home from './pages/Home.jsx';
 import About from './components/About.jsx';
 import Product from './pages/Product.jsx';
 import Kids from './components/Kids.jsx';
+import Faq from './components/Faq.jsx';
+
 
 
 const router = createBrowserRouter([
@@ -21,6 +23,10 @@ const router = createBrowserRouter([
     {
     path: "/Kids",
     element: <Kids/>,
+  },
+   {
+    path: "/Faq",
+    element: <Faq/>,
   },
  
      
