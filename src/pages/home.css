@@ -1,0 +1,9 @@
+.imgk{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .imgk{
+    display: block;
+}
+}

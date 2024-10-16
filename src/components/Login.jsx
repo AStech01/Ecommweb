@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import logoe from '../photos/l-003.jpg'
 import './Login.css'; // Create a CSS file for the styles
 
-const Login = () => {
-  const [isOpen, setIsOpen] = useState(false);
+const Login = ({isOpen, setIsOpen}) => {
+  
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -13,22 +14,23 @@ const Login = () => {
     setIsOpen(false);
   };
 
+
+  
+
   return (
     <div>
-      <h2>Modal Login Form</h2>
-      <button onClick={() => setIsOpen(true)} style={{ width: 'auto' }}>Login</button>
-
       {isOpen && (
         <div className="modal">
-          <form className="modal-content animate" onSubmit={handleLogin}>
-            <div className="imgcontainer">
+          <form className="modal-content animate bg-[url('C:\Users\ROOTSYS\Desktop\sabith\react\project\src\photos\bg-03.avif')] bg-cover" onSubmit={handleLogin}>
+            <div className="imgcontainer flex items-center justify-center ">
               <span onClick={() => setIsOpen(false)} className="close" title="Close Modal">&times;</span>
-              <img src="img_avatar2.png" alt="Avatar" className="avatar" />
+              <img src={logoe } alt="Avatar" className="md:w-96 w-80 rounded-full" />
             </div>
 
-            <div className="container">
+            <div className="container  ">
               <label htmlFor="uname"><b>Username</b></label>
               <input 
+                  className='rounded-md'
                 type="text" 
                 placeholder="Enter Username" 
                 name="uname" 
@@ -39,6 +41,7 @@ const Login = () => {
 
               <label htmlFor="psw"><b>Password</b></label>
               <input 
+                className='rounded-md'
                 type="password" 
                 placeholder="Enter Password" 
                 name="psw" 
@@ -47,14 +50,14 @@ const Login = () => {
                 required 
               />
               
-              <button type="submit">Login</button>
+              <button className='btnoo btn-11 rounded-md' type="submit">Login</button>
               <label>
                 <input type="checkbox" defaultChecked name="remember" /> Remember me
               </label>
             </div>
 
-            <div className="container" style={{ backgroundColor: '#f1f1f1' }}>
-              <button type="button" onClick={() => setIsOpen(false)} className="cancelbtn">Cancel</button>
+            <div className="container bg-[url('C:\Users\ROOTSYS\Desktop\sabith\react\project\src\photos\bg-03.avif')] bg-cover" style={{ backgroundColor: '#f1f1f1' }}>
+              <button type="button" onClick={() => setIsOpen(false)} className="cancelbtn btn-14 rounded-md">Cancel</button>
               <span className="psw">Forgot <a href="#">password?</a></span>
             </div>
           </form>
@@ -66,14 +69,15 @@ const Login = () => {
           /* Include your CSS styles here or link to an external stylesheet */
           body {font-family: Arial, Helvetica, sans-serif;}
           input[type=text], input[type=password] {
+          
             width: 100%;
             padding: 12px 20px;
             margin: 8px 0;
             display: inline-block;
-            border: 1px solid #ccc;
+            border: 2px solid #ffc0cb;
             box-sizing: border-box;
           }
-          button {
+          .btnoo  {
             background-color: #04AA6D;
             color: white;
             padding: 14px 20px;

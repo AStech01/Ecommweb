@@ -7,7 +7,7 @@
     display: flex;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 1023px){
     .cont-hidden{
     display: none;
 }
@@ -16,7 +16,7 @@
     display: flex;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1023px){
     .lg-hidden{
     display: none;
 }
@@ -42,7 +42,7 @@
 }
 
 .custom-btn {
-  width: 130px;
+  width: 100px;
   height: 40px;
   color: #fff;
   border-radius: 5px;
@@ -207,6 +207,80 @@ background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
   width: 100%;
 }
 
+.btn-11 {
+  border: none;
+  background: rgb(251,33,117);
+    background: linear-gradient(0deg, rgba(251,33,117,1) 0%, rgba(234,76,137,1) 100%);
+    color: #fff;
+    overflow: hidden;
+}
+.btn-11:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.btn-11:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 3s ease-in-out infinite;
+}
+.btn-11:hover{
+  opacity: .7;
+}
+.btn-11:active{
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
 
+
+@-webkit-keyframes shiny-btn1 {
+    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+
+
+.btn-14 {
+  background-color: #d589d8;
+background-image: linear-gradient(315deg, #d889d5 0%, #c80386 74%);
+  border: none;
+  z-index: 1;
+}
+.btn-14:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 5px;
+   background-color: #cc4dc4;
+background-image: linear-gradient(315deg, #cc4dcc 0%, #e496d0 74%);
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+.btn-14:hover {
+  color: #fff;
+}
+.btn-14:hover:after {
+  top: 0;
+  
+}
+.btn-14:active {
+  top: 2px;
+}
 
 

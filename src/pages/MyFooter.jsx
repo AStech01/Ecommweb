@@ -11,7 +11,7 @@ const MyFooter = () => {
       <div>
         
       </div>
-      <Footer className="bg-yellow-100 " container>
+      <Footer className="bg " container>
       <div className="w-full ">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div className="space-y-4 mb-8">

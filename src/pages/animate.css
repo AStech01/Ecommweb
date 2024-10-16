@@ -1,0 +1,9 @@
+.animate__animated.animate__swing {
+  --animate-duration: 8000ms;
+}
+
+/* This changes all the animations globally */
+:root {
+  --animate-duration:8000ms ;
+  --animate-delay: 2s;
+}

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Carousel } from 'flowbite-react'
 
 import aboutImg from '../photos/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-vector.jpg'
@@ -23,10 +23,20 @@ import MyFooter from './MyFooter'
 import Fles from '../components/Fles'
 import Navbar from '../components/Navbar'
 import Carousels from '../components/Carousels'
-
+import './home.css'
+  import 'aos/dist/aos.css'; // Import AOS styles
+import AOS from 'aos';
+import React, { useEffect } from 'react';
+import 'animate.css';
 
 
 const Home = () => {
+
+
+        useEffect(() => {
+        AOS.init(); // Initialize AOS
+    }, []);
+
   return (
       <div>
           <div>
@@ -37,20 +47,20 @@ const Home = () => {
           <h1 className='lg:text-6xl md:text-4xl text-2xl font-bold text-yellow-500'>FLAT <span>$500</span> OFF</h1>
         </div>
         <div>
-         <h4 className='lg:text-4xl md:text-4xl text-xl text-yellow-500'> On Your 1st Purchase </h4>
+         <h4 className='animate__animated animate__swing animate__infinite lg:text-4xl md:text-4xl text-xl text-yellow-500'> On Your 1st Purchase </h4>
         </div>
               
       </div>
       <div className='lg:mx-24 lg:mt-8 '>
         <img className=' w-full' src={aboutImg} alt="" />
       </div>
-      <div className=' flex items-center justify-center mt-4 lg:mt-0 md:mt-0   '>
-        <img className='w-48 hidden md:block ' src={omg} alt="" />
-        <img className='w-48  hidden md:block ' src={omg} alt="" />
-        <img className='w-48   hidden ' src={omg} alt="" />
-        <img className='w-48 example ' src={omg} alt="" />
+      <div className='flip-right flex items-center justify-center mt-4 lg:mt-0 md:mt-0   ' flip-right>
+        <img className= 'animate__animated animate__fadeInTopLeft w-48   ' src={omg} alt="" />
+        <img className='imgk animate__animated animate__fadeInTopRight  w-48   ' src={omg} alt=""  data-aos="flip-left" />
+        <img className='imgk w-48 animate__animated animate__fadeInBottomLeft ' src={omg} alt=""  data-aos="flip-left" />
+        <img className='imgk w-48 animate__animated  animate__fadeInBottomRight' src={omg} alt="" data-aos="flip-left" />
       
-       
+       <div data-aos="flip-right"></div>
 
 
       </div>

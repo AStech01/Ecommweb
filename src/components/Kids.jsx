@@ -47,7 +47,7 @@ import imgax from '../photos/d4.avif'
 import imgay from '../photos/d5.avif'
 
 import MyFooter from '../pages/MyFooter';
-
+import "./Kids.css"
 
 
 
@@ -67,7 +67,7 @@ const Kids = () => {
                 <h6 className='text-3xl text-black '>Rompers</h6>
                 <p>Foil Printed Sleeveless Kurta and Sharara  </p>
                 <p className='text-xl font-bold'>₹1,480 <span className='text-green-600'>63% Off</span></p>
-                <button className='custom-btn btn-8 my-2'>Click Me</button>
+                <button className='custom-btn btn-8 my-2 '>Click Me</button>
               </div>
             </div>
 

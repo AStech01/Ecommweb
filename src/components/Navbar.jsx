@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import logo from '../photos/images.png'
 import { Link } from 'react-router-dom';
 import { FaBars, FaXmark } from "react-icons/fa6";
+import Login from './Login';
 
 
 
@@ -9,6 +10,7 @@ import { FaBars, FaXmark } from "react-icons/fa6";
 function Navbar () {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
        
     //set toogle
     const toggleMenu = () => {
@@ -36,7 +38,7 @@ function Navbar () {
 
 const navItems = [
     { link: "Home", path: "/" },
-    { link: "Service", path: "/service" },
+   
     { link: "About", path: "/about" },
     { link: "Product", path: "/product" },
     { link: "Kids", path: "/kids" }, // Changed "Kids" to "/kids" for consistency
@@ -54,7 +56,7 @@ const scrollToTop = () => {
     
   return (
       <header className='w-full bg-white md:bg-transparent z-[1000] fixed top-0'>
-          <nav className={`py-4 lg:px-14 px-4 bg-yellow-100 ${isSticky ?"sticky top-0 left-0 right-0 border-b bg-white duration-300":""}`}>
+          <nav className={`py-4 lg:px-14 px-4 bg-white ${isSticky ?"sticky top-0 left-0 right-0 border-b bg-white duration-300":""}`}>
               <div className='flex justify-between items-center text-base gap-8 ' >
                   <a href=""className='text-2xl font-semibold flex items-center space-x-3'><img src={logo} alt="" className='w-10 inline-block items-center' />
                       <span className='text-[#263238]' >TECTIC</span></a>
@@ -73,13 +75,13 @@ const scrollToTop = () => {
         </ul>
                              {/* buttons large device */}
                   <div className='space-x-12 lg-hidden items-center'> 
-                      <a href="" className='lg-hidden items-center text-brandPrimary hover:text-gray900'>
-                          Login</a>
+                      <button className='lg-hidden items-center text-brandPrimary hover:text-gray900' onClick={()=>setIsOpen(true)}>
+                          Login</button>
                       <button className='bg-brandPrimary text-white py-2 px-2 transition-all
                          duration-300 rounded hover:bg-neutralDGray'>Sign up</button>
                   </div>
                   {/* btn for mobiles */}
-                  <div className='md:hidden'>
+                  <div className='lg:hidden'>
                       <button 
                           onClick={()=>setIsMenuOpen((prev)=>!prev)}
                         className=' text-neutralDGray focus:outline-none focus:text-gray-500'>
@@ -103,6 +105,9 @@ const scrollToTop = () => {
                   {isSticky && <button className='absolute -bottom-[800px] right-0 p-2 btn-primary' onClick={scrollToTop}>top</button>}
               </div>
           </nav>
+          <div>
+              <Login isOpen={isOpen} setIsOpen={setIsOpen}/>
+          </div>
      </header>
    
   )
