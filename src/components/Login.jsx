@@ -18,7 +18,7 @@ const Login = ({isOpen, setIsOpen}) => {
   
 
   return (
-    <div>
+    <div className='z-[1500]'>
       {isOpen && (
         <div className="modal">
           <form className="modal-content animate bg-[url('C:\Users\ROOTSYS\Desktop\sabith\react\project\src\photos\bg-03.avif')] bg-cover" onSubmit={handleLogin}>
@@ -99,7 +99,7 @@ const Login = ({isOpen, setIsOpen}) => {
             position: fixed;
             z-index: 1;
             left: 0;
-            top: 0;
+            top: 20px;
             width: 100%;
             height: 100%;
             overflow: auto;

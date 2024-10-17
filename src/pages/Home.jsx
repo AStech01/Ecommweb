@@ -44,7 +44,7 @@ const Home = () => {
           </div>
       <div className='flex justify-evenly items-center px-4 lg:px-14 h-36 lg:mx-28    mt-32 bg-yellow-100'>
         <div>
-          <h1 className='lg:text-6xl md:text-4xl text-2xl font-bold text-yellow-500'>FLAT <span>$500</span> OFF</h1>
+          <h1 className='animate__animated  animate__heartBeat animate__infinite lg:text-6xl md:text-4xl text-2xl font-bold text-yellow-500'>FLAT <span>$500</span> OFF</h1>
         </div>
         <div>
          <h4 className='animate__animated animate__swing animate__infinite lg:text-4xl md:text-4xl text-xl text-yellow-500'> On Your 1st Purchase </h4>
@@ -54,11 +54,11 @@ const Home = () => {
       <div className='lg:mx-24 lg:mt-8 '>
         <img className=' w-full' src={aboutImg} alt="" />
       </div>
-      <div className='flip-right flex items-center justify-center mt-4 lg:mt-0 md:mt-0   ' flip-right>
-        <img className= 'animate__animated animate__fadeInTopLeft w-48   ' src={omg} alt="" />
-        <img className='imgk animate__animated animate__fadeInTopRight  w-48   ' src={omg} alt=""  data-aos="flip-left" />
-        <img className='imgk w-48 animate__animated animate__fadeInBottomLeft ' src={omg} alt=""  data-aos="flip-left" />
-        <img className='imgk w-48 animate__animated  animate__fadeInBottomRight' src={omg} alt="" data-aos="flip-left" />
+      <div className='flip-right flex items-center justify-center mt-4 lg:mt-0 md:mt-0   ' >
+        <img className= 'animate__animated animate__shakeX animate__infinite w-48   ' src={omg} alt="" />
+        <img className='imgk animate__animated animate__shakeX animate__infinite  w-48   ' src={omg} alt=""   />
+        <img className='imgk w-48 animate__animated animate__shakeX animate__infinite ' src={omg} alt=""   />
+        <img className='imgk w-48 animate__animated animate__shakeX animate__infinite' src={omg} alt=""  />
       
        <div data-aos="flip-right"></div>
 

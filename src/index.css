@@ -284,3 +284,8 @@ background-image: linear-gradient(315deg, #cc4dcc 0%, #e496d0 74%);
 }
 
 
+.pr-001{
+  background-image: url(../src/pics/ia.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
