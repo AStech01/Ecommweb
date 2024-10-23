@@ -1,8 +1,9 @@
 
 import { Carousel } from 'flowbite-react'
 
-import aboutImg from '../photos/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-vector.jpg'
-import omg from '../photos/colorful-3d-banner-big-sale_23-2148409367.jpg'
+import aboutImg from '../pics/360_F_596626503_jrzjZNYStDexiWxQFqO7oCh6M8PdMlJs.jpg'
+
+import omge from '../pics/q2342.png'
 import AsImge from '../photos/pic6.avif'
 import AsImgf from '../photos/pic7.avif'
 import AsImgg from '../photos/pic8.avif'
@@ -38,7 +39,7 @@ const Home = () => {
     }, []);
 
   return (
-      <div>
+      <div className=''>
           <div>
               <Navbar/>
           </div>
@@ -55,10 +56,10 @@ const Home = () => {
         <img className=' w-full' src={aboutImg} alt="" />
       </div>
       <div className='flip-right flex items-center justify-center mt-4 lg:mt-0 md:mt-0   ' >
-        <img className= 'animate__animated animate__shakeX animate__infinite w-48   ' src={omg} alt="" />
-        <img className='imgk animate__animated animate__shakeX animate__infinite  w-48   ' src={omg} alt=""   />
-        <img className='imgk w-48 animate__animated animate__shakeX animate__infinite ' src={omg} alt=""   />
-        <img className='imgk w-48 animate__animated animate__shakeX animate__infinite' src={omg} alt=""  />
+        <img className= 'animate__animated animate__shakeX animate__infinite w-48   ' src={omge} alt="" />
+        <img className='imgk animate__animated animate__shakeX animate__infinite  w-48   ' src={omge} alt=""   />
+        <img className='imgk w-48 animate__animated animate__shakeX animate__infinite ' src={omge} alt=""   />
+        <img className='imgk w-48 animate__animated animate__shakeX animate__infinite' src={omge} alt=""  />
       
        <div data-aos="flip-right"></div>
 

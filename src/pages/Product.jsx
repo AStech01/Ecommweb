@@ -62,9 +62,13 @@ const Product = () => {
      
           <div>
           <Navbar />
-          
-            <div className='grid 2xl:grid-cols-4  gap-3 grid-rows md:grid-cols-2 xl:grid-cols-3 my-20 lg:px-16 justify-items-center    '  >
-          <div className=" lg:w-96 lg:h-96 w-80 h-80 ">
+             
+      <div className='mt-14'>
+        <h4 className='md:ml-10 lg:ml-20 md:text-3xl text-2xl pt-10 text-center md:text-left'>Gadgets & Tech Accessories</h4>
+      </div>
+      <div className='grid 2xl:grid-cols-4  gap-3 grid-rows md:grid-cols-2 xl:grid-cols-3 my-20 lg:px-16 justify-items-center    '  >
+        
+        <div className=" lg:w-96 lg:h-96 w-80 h-80 ">
           <Carousel >
             <div className='flex flex-col relative  '>
               <img className='w-full' src={aa} alt="..." />

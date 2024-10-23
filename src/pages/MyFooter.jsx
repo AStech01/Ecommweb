@@ -2,14 +2,27 @@ import React from "react";
 import { Footer } from "flowbite-react";
 import logo from '../photos/images.png'
 import {  BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
-
+import imgo from '../pics/Icons-App-Store-Google-play-1170x723.png'
 
 
 const MyFooter = () => {
   return (
     <div>
       <div>
-        
+          <div className='w-full h-36 bg-gray-800 mt-4'> 
+        <div className='flex w-full   justify-evenly items-center  ' >
+          <div>
+          <h4 className='uppercase text-white mt-4 md:text-[20px] text-[12px]'>Download our App</h4>
+          <img className='md:w-32 w-20 mt-3 md:ml-5' src={imgo} alt="" />
+            </div>
+          <div className='text-white md:mt-4 -mt-2 text-[9px] md:text-[20px] '>
+            <h2 className='md:text-[15px] sm:text-[12px] '>FOR ANY HELP, YOU MAY CALL US AT</h2>
+            <h6 className='mt-3 md:text-[15px] text-[12px]'>1800-266-3333</h6>
+            <p className='md:text-[15px] mt-4 '>(Monday to Saturday: 10 am - 10 pm, Sunday: 10 am - 7 pm)</p>
+          </div>
+            
+        </div>
+        </div>
       </div>
       <Footer className="bg " container>
       <div className="w-full ">
