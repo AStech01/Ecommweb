@@ -42,7 +42,7 @@ const Fles = () => {
                 <div>
                     <img src="https://images-static.nykaa.com/uploads/c6bf20a3-ddbe-478b-b82c-2495370058ff.gif?tr=w-600,cm-pad_resize" alt="" />
                 </div>
-                <div className="scroll-container overflow-auto flex " style={{whiteSpace:'nowrap'}}>
+                <div className="scroll-container overflow-auto flex  hide-scrolbar" style={{whiteSpace:'nowrap'}}>
   <img src={Slc} alt="Cinque Terre" width="200" height="200"/>
   <img src=  {Sld}  alt="Forest" width="200" height="200"/>
   <img src= {Slg} alt="Northern Lights" width="200" height="200"/>

@@ -427,10 +427,10 @@ const About = () => {
       </div>
         <div>
       <div className='md:max-w-[1550px] mx-auto  md:mt-10 '>
-          <h4 className='md:text-4xl text-2xl bold'> Similar Products</h4>
+          <h4 className='md:text-4xl text-2xl bold'> Similar Products <span className='text-zinc-400 text-[18px]'>10,726 items</span></h4>
            
                   <div className='grid 2xl:grid-cols-4  gap-6 grid-rows md:grid-cols-2 xl:grid-cols-3 my-20 lg:px-10 justify-items-center  '  >
-          <div className=" lg:w-80 lg:h-80 w-72 h-72 ">
+          <div className=" lg:w-80 lg:h-80 w-72 h-72 hover:scale-95 transition-all duration-300">
           <Carousel >
             <div className='flex flex-col relative  '>
               <img className='w-full' src={aa} alt="..." />
@@ -489,7 +489,7 @@ const About = () => {
       </Carousel>
       </div>
      
-      <div className="lg:w-80 lg:h-80 w-72 h-72  ">
+      <div className="lg:w-80 lg:h-80 w-72 h-72 hover:scale-95 transition-all duration-300 ">
       <Carousel >
          <div className='flex flex-col relative  '>
               <img className='w-full' src={be} alt="..." />
@@ -547,7 +547,7 @@ const About = () => {
             </div>
       </Carousel>
               </div>
-                <div className="lg:w-80 lg:h-80 w-72 h-72  ">
+                <div className="lg:w-80 lg:h-80 w-72 h-72 hover:scale-95 transition-all duration-300 ">
       <Carousel >
          <div className='flex flex-col relative  '>
               <img className='w-full' src={ca} alt="..." />
@@ -605,7 +605,7 @@ const About = () => {
             </div>
       </Carousel>
               </div>
-                     <div className="lg:w-80 lg:h-80 w-72 h-72  ">
+                     <div className="lg:w-80 lg:h-80 w-72 h-72 hover:scale-95 transition-all duration-300 ">
       <Carousel >
          <div className='flex flex-col relative  '>
               <img className='w-full' src={da} alt="..." />
@@ -663,7 +663,7 @@ const About = () => {
             </div>
       </Carousel>
               </div>
-                     <div className="lg:w-80 lg:h-80 w-72 h-72  ">
+                     <div className="lg:w-80 lg:h-80 w-72 h-72  hover:scale-95 transition-all duration-300">
       <Carousel >
          <div className='flex flex-col relative  '>
               <img className='w-full' src={fa} alt="..." />
@@ -721,7 +721,7 @@ const About = () => {
             </div>
       </Carousel>
               </div>
-                     <div className="lg:w-80 lg:h-80 w-72 h-72  ">
+                     <div className="lg:w-80 lg:h-80 w-72 h-72  hover:scale-95 transition-all duration-300">
       <Carousel >
          <div className='flex flex-col relative  '>
               <img className='w-full' src={ga} alt="..." />
@@ -779,7 +779,7 @@ const About = () => {
             </div>
       </Carousel>
               </div>
-                     <div className="lg:w-80 lg:h-80 w-72 h-72  ">
+                     <div className="lg:w-80 lg:h-80 w-72 h-72  hover:scale-95 transition-all duration-300">
       <Carousel >
          <div className='flex flex-col relative  '>
               <img className='w-full' src={ha} alt="..." />
@@ -837,7 +837,7 @@ const About = () => {
             </div>
       </Carousel>
               </div>
-                     <div className="lg:w-80 lg:h-80 w-72 h-72  ">
+                     <div className="lg:w-80 lg:h-80 w-72 h-72 hover:scale-95 transition-all duration-300">
       <Carousel >
          <div className='flex flex-col relative  '>
               <img className='w-full' src={ia} alt="..." />

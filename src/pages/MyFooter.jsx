@@ -3,13 +3,14 @@ import { Footer } from "flowbite-react";
 import logo from '../photos/images.png'
 import {  BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
 import imgo from '../pics/Icons-App-Store-Google-play-1170x723.png'
+import Cars from "../components/Cars";
 
 
 const MyFooter = () => {
   return (
     <div>
       <div>
-          <div className='w-full h-36 bg-gray-800 mt-4'> 
+          <div className='w-full h-36 bg-gray-900 mt-4'> 
         <div className='flex w-full   justify-evenly items-center  ' >
           <div>
           <h4 className='uppercase text-white mt-4 md:text-[20px] text-[12px]'>Download our App</h4>
@@ -73,8 +74,14 @@ const MyFooter = () => {
       </div>
       </Footer>
       
+     
+       
       </div>
 
+    
+    
     )
 }
+
+
 export default MyFooter
